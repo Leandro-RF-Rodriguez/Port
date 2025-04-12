@@ -1,73 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Leandro Rafael</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/email.js" defer></script>
+    <script src="js/popup.js" defer></script>    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
 
 <div class="posi">
-   <nav class="menu">  
-    <ul class="parteum">
-        <li><a class="logo"></a></li>
-    </ul>
-    <ul class="partedois">
-        <li><a href="a1">Sobre</a></li>
-        <li><a href="">Linkdin</a></li>
-    </ul>
-</nav> 
+    <nav class="menu">  
+        <ul class="parteum">
+            <li><a class="logo"></a></li>
+        </ul>
+        <ul class="partedois">
+            <li><a href="#a1">Sobre</a></li>
+            <li><a href="https://www.linkedin.com/in/leandro-ferreira2002/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav> 
 </div>
 
-<div class="sobremim">
+<div class="sobremim" id="a1">
     <div class="perfil">
-    <ul class="perfil_um">
-
-        <ul class="perfil_esquerda">
-    
+        <ul class="perfil_um">
+            <ul class="perfil_esquerda">
                 <div class="perfil_esquerda_nome">
                     <li class="perfil_esquerda_um">
-                       <!-- Apliquei a classe "texto-anima" aqui para animação -->
-                       <h1 class="texto-anima">─ Leandro Rafael ─</h1>
-                       <h3 class="texto-anima">Ferreira Rodriguez</h3>
-                       <h3 class="texto-anima">─────── ● ───────</h3>
+                        <h1 class="texto-anima">─ Leandro Rafael ─</h1>
+                        <h3 class="texto-anima">Ferreira Rodriguez</h3>
+                        <h3 class="texto-anima">─────── ● ───────</h3>
                     </li>
                 </div>
 
                 <li class="perfil_esquerda_dois">
-
                     <div class="trabalho">
-                            <h2>Desenvolvedor / Front e Back - End</h2>
+                        <h2>Desenvolvedor / Front e Back-End</h2>
                     </div>
-
                     <h4>
-                        Como desenvolvedor, dediquei-me ao planejamento de projetos e ao desenvolvimento de metodologias organizacionais para garantir que o trabalho
-                        em equipe aconteça de forma ágil e tranquila. No back-end, especializei-me na linguagem JavaScript, proporcionando maior flexibilidade às
-                        aplicações desenvolvidas. Já no front-end, aprofundei meus conhecimentos em frameworks modernos, mantendo-me sempre atualizado com as novas
-                        tecnologias de visualização. 🚀
+                        Como desenvolvedor, dediquei-me ao planejamento de projetos e ao desenvolvimento de metodologias organizacionais
+                        para garantir que o trabalho em equipe aconteça de forma ágil e tranquila. No back-end, especializei-me na
+                        linguagem JavaScript, proporcionando maior flexibilidade às aplicações desenvolvidas. Já no front-end, aprofundei
+                        meus conhecimentos em frameworks modernos, mantendo-me sempre atualizado com as novas tecnologias de visualização. 🚀
                     </h4>
-                
                 </li>
             </ul>
 
             <div class="espaso">
                 <div class="perfil_direita">
-                    <img src="img/eu.jpeg" alt="" width="400px">
+                    <img src="img/eu.jpeg" alt="Foto de Leandro Rafael" width="400px">
                 </div>
                 <div class="botao">
-                    <ul class="b1"><button >CURRÍCULO</button></ul>
-                    <ul class="b2"><button>
-                        <a class="CONTATO" href="https://api.whatsapp.com/send/?phone=5199574843&text&type=phone_number&app_absent=0">Contato</a>
-                    </button></ul>
+                    <ul class="b1"><button>CURRÍCULO</button></ul>
+                    <ul class="b2"><button id="popup-btn">Fale Comigo</button></ul>
                 </div>
-                
 
+                <div id="popup" class="popup">
+                    <form id="contact-form">
+                        <h2>Fale Comigo</h2>
+                        <input type="text" name="user_name" placeholder="Seu Nome" required><br><br>
+                        <input type="email" name="user_email" placeholder="Seu E-mail" required><br><br>
+                        <textarea name="message" placeholder="Digite sua mensagem" required></textarea><br><br>
+                        <button type="submit">Enviar</button>
+                        <button type="button" onclick="document.getElementById('popup').style.display='none'">Fechar</button>
+                    </form>
+                </div>
             </div>
-    </ul>
-</div>
-
+        </ul>
+    </div>
 </div>
 
 </body>
