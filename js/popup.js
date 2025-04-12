@@ -2,43 +2,45 @@ document.addEventListener("DOMContentLoaded", function () {
     const popupBtn = document.getElementById("popup-btn");
     const popup = document.getElementById("popup");
 
+    // Exibe o popup ao clicar no botão
     popupBtn.addEventListener("click", function () {
         popup.style.display = "block";
     });
 
+    // Fecha o popup se clicar fora dele
     window.addEventListener("click", function (event) {
-        // Isso evita que clicar fora feche o popup se clicar dentro do formulário
         if (event.target === popup) {
             popup.style.display = "none";
         }
     });
-});
 
+    // Inicialização do EmailJS (utilize sua chave pública, caso necessário)
+    emailjs.init("PMVEGfUpeLcUDvoH6");
 
-// Inicialização do EmailJS - lembre de usar aspas no seu user ID
-(function () {
-    emailjs.init("PMVEGfUpeLcUDvoH6"); // Substitua com seu PUBLIC KEY (ex: "sua_public_key")
-})();
-
-document.addEventListener("DOMContentLoaded", function () {
+    // Manipulação do envio do formulário
     const form = document.getElementById("contact-form");
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault();
+        e.preventDefault(); // Previne o comportamento padrão de envio do formulário
 
-        // Substitua abaixo com os seus IDs corretos do EmailJS
-        const serviceID = "service_0n4ipnj";         // <- seu service ID
-        const templateID = "template_fw8oeei";       // <- seu template ID
+        const serviceID = "service_0n4ipnj";
+        const templateID = "template_mgiuisi";
 
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(function () {
+        // Coleta o valor do e-mail preenchido no formulário
+        const userEmail = document.querySelector('[name="user_email"]').value;
+
+        // Atualiza o valor do e-mail no modelo de template
+        form.user_email.value = userEmail;
+
+        // Envia o formulário para o EmailJS
+        emailjs.sendForm(serviceID, templateID, form)
+            .then(function (response) {
                 alert("Mensagem enviada com sucesso!");
-                form.reset();
-                document.getElementById("popup").style.display = "none";
+                form.reset(); // Limpa os campos do formulário
+                popup.style.display = "none"; // Fecha o popup
             }, function (error) {
                 console.error("Erro ao enviar mensagem:", error);
                 alert("Erro ao enviar. Tente novamente mais tarde.");
             });
     });
 });
-
