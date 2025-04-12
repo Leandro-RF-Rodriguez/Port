@@ -269,7 +269,7 @@ h4{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: rgb(16, 45, 109);
     padding: 2rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
@@ -280,7 +280,7 @@ h4{
 
 .popup h2 {
     margin-bottom: 1rem;
-    color: #111;
+    color: rgb(127, 255, 212);
     font-size: 1.5rem;
     text-align: center;
 }
@@ -289,7 +289,7 @@ h4{
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 8px;
     font-size: 1rem;
     resize: vertical;
@@ -298,8 +298,8 @@ h4{
 .popup button {
     padding: 0.7rem 1.2rem;
     font-size: 1rem;
-    background-color: #222;
-    color: #fff;
+    background-color:rgb(127, 255, 212);
+    color: #000000;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -308,7 +308,9 @@ h4{
 }
 
 .popup button:hover {
-    background-color: #444;
+    background-color: rgb(102, 204, 184); /* Cor um pouco mais escura no hover */
+    box-shadow: 0px 0px 10px rgba(127, 255, 212, 0.8); /* Efeito de brilho */
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
 }
 
 /* Responsivo para o popup */
