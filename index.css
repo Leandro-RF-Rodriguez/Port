@@ -359,7 +359,6 @@ h4{
 
 @media (max-width: 768px) {
   .perfil {
-    flex-direction: column-reverse; /* Inverte a ordem: foto e botões primeiro */
     align-items: center;
     text-align: center;
   }
