@@ -27,10 +27,6 @@ body {
     align-items: center;
 }
 
-.posi{
-    width: 1250px;
-}
-
 .menu {
     display: flex;
     justify-content: space-between;  
@@ -389,20 +385,25 @@ margin: 0;
     background-color: #000000;
 }
 
+
+
 @media (max-width: 900px){
 
     .body{
         display: flex;
         flex-direction: column;    
+        width: auto;
     }
 
     .menu{
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: auto;
         padding: 0;
-        margin-right: 100%;
-        z-index: 0;
+    }
+
+    .sobremim{
+        width: auto;
     }
 
     .menu ul li a{
@@ -416,8 +417,8 @@ margin: 0;
         margin: 0;
     }
 
-    .partedois li a{
-        padding: 12px;
+    .partedois{
+        margin-left: 0;
     }
     
     .espaso {
@@ -455,6 +456,7 @@ margin: 0;
     .tudo{
         display: flex;
         flex-direction: column;
+        width: auto;
     }
 
     .botao{
