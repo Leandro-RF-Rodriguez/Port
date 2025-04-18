@@ -529,4 +529,8 @@ margin: 0;
         display: flex;
         justify-content: center;
     }
+    .trabalho{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
