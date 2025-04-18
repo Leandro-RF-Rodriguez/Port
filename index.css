@@ -389,8 +389,7 @@ margin: 0;
     background-color: #000000;
 }
 
-/* Responsivo para o popup */
-@media (min-width: 360px) and (max-height: 800px) {
+@media (max-width: 900px){
 
     .body{
         display: flex;
@@ -403,74 +402,7 @@ margin: 0;
         width: 100%;
         padding: 0;
         margin-right: 100%;
-    }
-
-    .menu ul li a{
-        font-size: 25px;
-    }
-    .perfil_um {
-        flex-direction: column;
-    }
-
-    .partedois li{
-        margin: 0;
-    }
-
-    .partedois li a{
-        padding: 12px;
-    }
-    
-    .espaso {
-        order: 1;
-        width: 100%;
-        
-    }
-
-    .perfil_direita{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .perfil_esquerda {
-        order: 2;
-        width: 100%;
-    }
-
-    .perfil_esquerda_dois {
-        order: 3;
-        z-index: 2;
-        height: auto;
-    }
-
-    .perfil_esquerda_dois h4 {
-        margin: 15px;
-    }
-
-    .Construção{
-        order: 4;
-        z-index: 2;
-        margin-top: 1000px;
-    }
-
-    .tudo{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 390px) and (max-height: 844px) {
-
-    .body{
-        display: flex;
-        flex-direction: column;    
-    }
-
-    .menu{
-        display: flex;
-        justify-content: center;
-        width: 90%;
-        padding: 0;
-        margin-right: 100%;
+        z-index: 0;
     }
 
     .menu ul li a{
@@ -529,6 +461,7 @@ margin: 0;
         display: flex;
         justify-content: center;
     }
+
     .trabalho{
         padding-left: 10px;
         padding-right: 10px;
