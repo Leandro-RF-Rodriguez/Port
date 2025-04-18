@@ -27,6 +27,10 @@ body {
     align-items: center;
 }
 
+.posi{
+    width: 1250px;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;  
@@ -104,6 +108,11 @@ a {
     border-top-right-radius: 50px;  /* Canto superior direito */
 }
 
+.perfil_esquerda_nome ul img{
+    width: 30px;
+}
+
+
 .perfil_esquerda_um {
     height: 60%;
     width: 100%;
@@ -126,7 +135,7 @@ a {
     padding: 25px;
 }
 
-.perfil_direita {
+.perfil_direita ul{
     width: 300px;
     height: 400px;
     clip-path: polygon( 100% , 100%, 100%, 10px 80%);
@@ -229,6 +238,10 @@ h4{
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+}
+
+.partedois {
+    margin-left: 100%;
 }
 
 .partedois a {
@@ -377,80 +390,143 @@ margin: 0;
 }
 
 /* Responsivo para o popup */
-@media (max-width: 768px) {
+@media (min-width: 360px) and (max-height: 800px) {
+
+    .body{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin-right: 100%;
+    }
+
+    .menu ul li a{
+        font-size: 25px;
+    }
     .perfil_um {
         flex-direction: column;
-        align-items: center;
     }
 
-    .perfil_esquerda,
-    .perfil_direita {
-        width: 90%;
-        height: auto;
-        margin-bottom: 20px;
+    .partedois li{
+        margin: 0;
     }
 
-    .perfil_esquerda_dois {
+    .partedois li a{
+        padding: 12px;
+    }
+    
+    .espaso {
+        order: 1;
         width: 100%;
-        text-align: justify;
+        
     }
 
-    .perfil_direita img {
-        width: 100%;
-        height: auto;
-    }
-
-    .botao {
+    .perfil_direita{
         display: flex;
         justify-content: center;
     }
-
-    h1, h2, h3, h4 {
-        font-size: 1rem;
+    
+    .perfil_esquerda {
+        order: 2;
+        width: 100%;
     }
 
-    ul {
-        flex-direction: column;
-        gap: 10px;
+    .perfil_esquerda_dois {
+        order: 3;
+        z-index: 2;
+        height: auto;
     }
 
-    .menu {
+    .perfil_esquerda_dois h4 {
+        margin: 15px;
+    }
+
+    .Construção{
+        order: 4;
+        z-index: 2;
+        margin-top: 1000px;
+    }
+
+    .tudo{
+        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 }
 
-@media (max-width: 768px) {
-  .perfil {
-    align-items: center;
-    text-align: center;
-  }
+@media (min-width: 390px) and (max-height: 844px) {
 
-  .perfil_direita img {
-    width: 80%;
-    height: auto;
-    max-width: 300px;
-  }
+    .body{
+        display: flex;
+        flex-direction: column;    
+    }
 
-  .botao {
-    flex-direction: column; /* Botões em coluna */
-    width: 100%;
-    align-items: center;
-  }
+    .menu{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        padding: 0;
+        margin-right: 100%;
+    }
 
-  .botao button {
-    width: 80%;
-    padding: 0.75rem;
-    font-size: 1rem;
-  }
+    .menu ul li a{
+        font-size: 25px;
+    }
+    .perfil_um {
+        flex-direction: column;
+    }
 
-  .perfil_esquerda {
-    padding: 1rem;
-  }
+    .partedois li{
+        margin: 0;
+    }
 
-  .perfil_esquerda_dois h4 {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+    .partedois li a{
+        padding: 12px;
+    }
+    
+    .espaso {
+        order: 1;
+        width: 100%;
+        
+    }
+
+    .perfil_direita{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .perfil_esquerda {
+        order: 2;
+        width: 100%;
+    }
+
+    .perfil_esquerda_dois {
+        order: 3;
+        z-index: 2;
+        height: auto;
+    }
+
+    .perfil_esquerda_dois h4 {
+        margin: 15px;
+    }
+
+    .Construção{
+        order: 4;
+        z-index: 2;
+        margin-top: 630px;
+    }
+
+    .tudo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        display: flex;
+        justify-content: center;
+    }
 }
-
