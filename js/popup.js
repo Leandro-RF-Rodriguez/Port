@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Envia o formulário para o EmailJS
         emailjs.sendForm(serviceID, templateID, form)
             .then(function (response) {
-                alert("Mensagem enviada com sucesso!");
+                alert("Agradeço o seu contato e em breve retornarei com uma resposta!");
                 form.reset(); // Limpa os campos do formulário
                 popup.style.display = "none"; // Fecha o popup
             }, function (error) {
