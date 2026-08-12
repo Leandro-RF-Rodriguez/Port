@@ -3,94 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Leandro Rafael Ferreira Rodriguez, desenvolvedor Front e Back-End.">
     <title>Leandro Rafael</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="js/popup.js" defer></script>  
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
-<div class="tudo">
+<header class="ordem1">
 
-    <div class="posi">
-        <nav class="menu">  
-                <ul class="partedois">
-                    <li><a href="#a1">Sobre</a></li>
-                    <li><a href="https://www.linkedin.com/in/leandro-rafael-ferreira-rodriguez-b691b8243">LinkedIn</a></li>
-                    <li><a href="https://github.com/Leandro-RF-Rodriguez">GitHub</a></li>
-                </ul>
-        </nav> 
+    <div class="logo-area">
+        <a class="NAVBAR_1" href="#a1">Leandro Rodriguez</a>
+
+        <ul class="redes">
+            <li><a href="https://github.com/Leandro-RF-Rodriguez" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/leandro-rafael-ferreira-rodriguez-b691b8243" target="_blank" rel="noopener"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
+            <li><a href="mailto:leandrorafaelf2002@gmail.com"><ion-icon name="mail-outline"></ion-icon> Email</a></li>
+        </ul>
     </div>
 
-    <div class="sobremim" id="a1">
+    <nav aria-label="Navegação principal">
+        <ul class="Navbar_4">
+            <li><a href="#a1"><span class="titulo">Sobre mim</span></a></li>
+            <li><a href="#projetos"><span class="titulo">Projetos</span></a></li>
+            <li><a href="#curriculo" class="nav-destaque"><span class="titulo">Currículo</span></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="tudo">
+
+    <section class="sobremim" id="a1">
         <div class="perfil">
-            <ul class="perfil_um">
-                <ul class="perfil_esquerda">
+            <div class="perfil_um">
+
+                <div class="perfil_esquerda">
                     <div class="perfil_esquerda_nome">
-                        <li class="perfil_esquerda_um">
+                        <div class="perfil_esquerda_um">
                             <h1 class="texto-anima">─ Leandro Rafael ─</h1>
                             <h3 class="texto-anima">Ferreira Rodriguez</h3>
                             <h3 class="texto-anima">─────── ● ───────</h3>
-                        </li>
+                        </div>
                     </div>
 
-                    <li class="perfil_esquerda_dois">
+                    <div class="perfil_esquerda_dois">
                         <div class="trabalho">
-                            <h2>Desenvolvedor / Front e Back-End</h2>
+                            <h2>Carta de Apresentação</h2>
                         </div>
-                        <h4>
-                            Como desenvolvedor, dediquei-me ao planejamento de projetos e ao desenvolvimento de metodologias organizacionais
-                            para garantir que o trabalho em equipe aconteça de forma ágil e tranquila. No back-end, especializei-me na
-                            linguagem JavaScript, proporcionando maior flexibilidade às aplicações desenvolvidas. Já no front-end, aprofundei
-                            meus conhecimentos em frameworks modernos, mantendo-me sempre atualizado com as novas tecnologias de visualização. 🚀
-                        </h4>
-                    </li>
-                </ul>
 
+                        <div class="carta">
+                            <p>Olá! Meu nome é <strong>Leandro Rafael</strong> e sou <strong>Analista de Suporte Jr.</strong>, apaixonado por tecnologia e pelo desenvolvimento de soluções.</p>
+
+                            <p>Tenho experiência com <strong>suporte técnico, análise de problemas e atendimento ao usuário</strong>, sempre buscando entender cada situação e encontrar a melhor solução.</p>
+
+                            <p>Também tenho interesse em <strong>desenvolvimento de sistemas e programação</strong>, áreas nas quais venho constantemente aprimorando meus conhecimentos.</p>
+
+                            <p>Sou uma pessoa <strong>dedicada, curiosa e responsável</strong>, que valoriza o aprendizado contínuo e está sempre em busca de novos desafios para crescer profissionalmente e contribuir com a equipe. 🚀</p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="espaso">
                     <div class="perfil_direita">
-                        <ul><img src="img/eu.jpeg" alt="Foto de Leandro Rafael"width="200px"></ul>
-                    </div>
-                    <div class="botao">
-                        <ul class="b1"><button>CURRÍCULO</button></ul>
-                        <ul class="b2"><button id="popup-btn">FALE COMIGO</button></ul>
-                    </div>
-
-                    <div id="popup" class="popup">
-                        <form id="contact-form">
-                            <h2>Fale Comigo</h2>
-
-                            <div class="formulario">
-                                <ul class="formulariop1">
-                                    <li><input type="text" name="user_name" placeholder="Nome" required><br><br></li>
-                                    <li><input type="text" name="user_sobrenome" placeholder="Sobrenome" required><br><br></li>
-                                </ul>
-                                <ul class="formulariop2">
-                                    <li><input type="text" name="user_email" placeholder="E-mail" required><br><br></li>
-                                    <li><input type="text" name="user_whatsapp" placeholder="WhatsApp" required><br><br></li>
-                                </ul>
-                                <ul class="forulariop3">
-                                    <textarea name="message" placeholder="Digite sua mensagem" required></textarea><br><br>
-                                </ul>
-                            </div>
-                            <h6>Após o preenchimento deste formulário, as informações fornecidas ficarão disponíveis para leitura.</h6>
-                            <button type="submit">Enviar</button>
-                            <button type="button" onclick="document.getElementById('popup').style.display='none'">Fechar</button>
-                        </form>
+                        <img src="img/eu.jpeg" alt="Foto de Leandro Rafael" width="200" height="200">
                     </div>
 
 
                 </div>
-            </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="curriculo" id="curriculo">
+
+        <div class="curriculo-cabecalho">
+            <div>
+                <p class="curriculo-eyebrow">Trajetória Profissional</p>
+                <h2>Currículo</h2>
+                <p class="curriculo-sub">Analista Jr II · Suporte Linx | HTML | CSS | JavaScript | PostgreSQL</p>
+                <p class="curriculo-local"><ion-icon name="location-outline"></ion-icon> Porto Alegre, Rio Grande do Sul, Brasil</p>
+            </div>
+            <div class="curriculo-status">
+                <span class="ponto-status" aria-hidden="true"></span>
+                Disponível para oportunidades
+            </div>
         </div>
 
+        <div class="curriculo-resumo">
+            <p>"Sou carismático, comunicativo, aprendo rápido e estou muito motivado. Atuo com suporte a sistemas de gestão, banco de dados PostgreSQL e desenvolvimento web front-end."</p>
+        </div>
 
-    </div>
+        <!-- ⚠️ Troque os dados abaixo (empresas, cargos, descrições) pelas suas experiências reais -->
+        <div class="curriculo-filtros" role="group" aria-label="Filtrar experiências">
+            <button class="filtro-btn ativo" data-filtro="Todos">Todos</button>
+            <button class="filtro-btn" data-filtro="Trabalho">Trabalho</button>
+            <button class="filtro-btn" data-filtro="Educação">Educação</button>
+        </div>
 
-<div class="Construção"><ul>Em Construção</ul> </div>
+        <div class="curriculo-grid">
 
-</div>
+            <div class="curriculo-timeline">
+                <ol class="timeline-lista">
+
+                    <li class="timeline-item" data-tipo="Trabalho">
+                        <div class="timeline-ponto"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-topo">
+                                <span class="timeline-periodo"><ion-icon name="calendar-outline"></ion-icon> Jan 2026 — Presente</span>
+                                <span class="timeline-tag">Trabalho</span>
+                            </div>
+                            <h3>Analista Jr II — Suporte</h3>
+                            <p class="timeline-local"><ion-icon name="location-outline"></ion-icon> Linx · Rio Grande do Sul, Brasil</p>
+                            <p class="timeline-desc">Suporte a sistemas de gestão Linx (Seller e Empório). Análise e resolução de incidentes, dúvidas operacionais e melhorias, com cumprimento de SLAs. Gestão de chamados via Salesforce e JIRA, manutenção de banco de dados PostgreSQL e análise de incidentes via acesso remoto (TeamViewer). Suporte a infraestrutura de PDVs com instalação e configuração de softwares, drivers, periféricos e equipamentos (impressoras não fiscais SAT, pinpads).</p>
+                            <div class="timeline-skills">
+                                <span>PostgreSQL</span><span>Salesforce</span><span>JIRA</span><span>TeamViewer</span><span>Linx Seller</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-tipo="Trabalho">
+                        <div class="timeline-ponto"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-topo">
+                                <span class="timeline-periodo"><ion-icon name="calendar-outline"></ion-icon> Nov 2024 — Jan 2026</span>
+                                <span class="timeline-tag">Trabalho</span>
+                            </div>
+                            <h3>Analista Jr I — Suporte</h3>
+                            <p class="timeline-local"><ion-icon name="location-outline"></ion-icon> Linx · Rio Grande do Sul, Brasil</p>
+                            <p class="timeline-desc">Início da trajetória na Linx com suporte técnico aos sistemas de gestão. Resolução de chamados de nível 1 e 2, análise de incidentes e atendimento a clientes com foco em SLA.</p>
+                            <div class="timeline-skills">
+                                <span>PostgreSQL</span><span>Salesforce</span><span>JIRA</span><span>Suporte N1/N2</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-tipo="Trabalho">
+                        <div class="timeline-ponto"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-topo">
+                                <span class="timeline-periodo"><ion-icon name="calendar-outline"></ion-icon> Dez 2022 — Nov 2024</span>
+                                <span class="timeline-tag">Trabalho</span>
+                            </div>
+                            <h3>Analista de Atendimento ao Cliente</h3>
+                            <p class="timeline-local"><ion-icon name="location-outline"></ion-icon> Intelly · Porto Alegre, Rio Grande do Sul, Brasil</p>
+                            <p class="timeline-desc">Atendimento e suporte ao cliente com foco em qualidade e resolução ágil de demandas. Desenvolvimento de habilidades de comunicação, análise de problemas e relacionamento com clientes.</p>
+                            <div class="timeline-skills">
+                                <span>Atendimento ao Cliente</span><span>Suporte</span><span>Comunicação</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-tipo="Trabalho">
+                        <div class="timeline-ponto"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-topo">
+                                <span class="timeline-periodo"><ion-icon name="calendar-outline"></ion-icon> Out 2021 — Out 2022</span>
+                                <span class="timeline-tag">Trabalho</span>
+                            </div>
+                            <h3>Aprendiz de Qualidade</h3>
+                            <p class="timeline-local"><ion-icon name="location-outline"></ion-icon> Android Industries · Gravataí, RS</p>
+                            <p class="timeline-desc">Responsável por controles de planilhas Excel e auxílios em demandas administrativas dentro do setor de qualidade da empresa.</p>
+                            <div class="timeline-skills">
+                                <span>Excel</span><span>Controle de Qualidade</span><span>Administrativo</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-tipo="Educação">
+                        <div class="timeline-ponto timeline-ponto-educacao"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-topo">
+                                <span class="timeline-periodo"><ion-icon name="calendar-outline"></ion-icon> Jan 2024 — Dez 2026</span>
+                                <span class="timeline-tag timeline-tag-educacao">Educação</span>
+                            </div>
+                            <h3>Análise e Desenvolvimento de Sistemas</h3>
+                            <p class="timeline-local"><ion-icon name="location-outline"></ion-icon> Centro Universitário Cesuca · Rio Grande do Sul, Brasil</p>
+                            <p class="timeline-desc">Graduação em Tecnologia da Informação com foco em Análise e Desenvolvimento de Sistemas. Formação em lógica de programação, banco de dados, desenvolvimento web e engenharia de software.</p>
+                            <div class="timeline-skills">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PostgreSQL</span><span>Ciência de Dados</span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ol>
+            </div>
+
+            <aside class="curriculo-sidebar">
+
+                <div class="sidebar-card">
+                    <h3>Principais Competências</h3>
+
+                    <div class="skill-barra">
+                        <div class="skill-topo"><span>HTML &amp; CSS</span><span>80%</span></div>
+                        <div class="skill-trilha"><div class="skill-preenchimento" style="width:80%"></div></div>
+                    </div>
+                    <div class="skill-barra">
+                        <div class="skill-topo"><span>JavaScript</span><span>72%</span></div>
+                        <div class="skill-trilha"><div class="skill-preenchimento" style="width:72%"></div></div>
+                    </div>
+                    <div class="skill-barra">
+                        <div class="skill-topo"><span>PostgreSQL</span><span>75%</span></div>
+                        <div class="skill-trilha"><div class="skill-preenchimento" style="width:75%"></div></div>
+                    </div>
+                    <div class="skill-barra">
+                        <div class="skill-topo"><span>Salesforce &amp; JIRA</span><span>85%</span></div>
+                        <div class="skill-trilha"><div class="skill-preenchimento" style="width:85%"></div></div>
+                    </div>
+                    <div class="skill-barra">
+                        <div class="skill-topo"><span>Suporte a Sistemas</span><span>90%</span></div>
+                        <div class="skill-trilha"><div class="skill-preenchimento" style="width:90%"></div></div>
+                    </div>
+                    <div class="skill-barra">
+                        <div class="skill-topo"><span>Ciência de Dados</span><span>60%</span></div>
+                        <div class="skill-trilha"><div class="skill-preenchimento" style="width:60%"></div></div>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card"><p class="stat-valor">4+</p><p class="stat-label">Anos de exp.</p></div>
+                    <div class="stat-card"><p class="stat-valor">3</p><p class="stat-label">Empresas</p></div>
+                    <div class="stat-card"><p class="stat-valor">Linx</p><p class="stat-label">Empresa atual</p></div>
+                    <div class="stat-card"><p class="stat-valor">2026</p><p class="stat-label">Conclusão ADS</p></div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Vamos conversar?</h3>
+                    <p class="cta-texto">Aberto a novas oportunidades em suporte, desenvolvimento e análise de sistemas.</p>
+                    <a href="mailto:leandrorafaelf2002@gmail.com" class="cta-btn">
+                        <ion-icon name="mail-outline"></ion-icon> leandrorafaelf2002@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/leandro-rafael-ferreira-rodriguez-b691b8243" target="_blank" rel="noopener" class="cta-btn cta-btn-secundario">
+                        <ion-icon name="logo-linkedin"></ion-icon> LinkedIn <ion-icon name="open-outline"></ion-icon>
+                    </a>
+                </div>
+
+            </aside>
+        </div>
+    </section>
+
+    <section class="Construção" id="projetos">
+        <p>Em Construção</p>
+    </section>
+
+</main>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/curriculo.js" defer></script>
 
 </body>
 </html>
